@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \documentclass[]{deedy-resume-openfont}
+
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \namesection{Pratyush}{Raj}{pratyushraj2f2gmail.com | +916206690294 | Ashish anand enclave, Tupudana, Ranchi, Jharkhand , India | devpost.com/rajpratyush}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Links
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Links}
+\raggedright
+\begin{tabular}{l l}
+{{\descript{GitHub} }}\hspace*{6pt}\href{https://www.github.com/rajpratyush}{github.com/rajpratyush}
+{{\hspace*{38pt} \descript{Linkedin}}}\hspace*{6pt}\href{https://www.linkedin.com/in/rajpratyush}{linkedin.com/in/rajpratyush}\\
+{{\descript{HackerRank} }}\hspace*{6pt}\href{https://www.hackerrank.com/2pratyushraj}{hackerrank.com/2pratyushraj}
+{{\hspace*{38pt} \descript{Portfolio}}}\hspace*{6pt}\href{https://devpost.com/rajpratyush}{devpost.com/rajpratyush}\\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+    \runsubsection{Cochin University College of Engineering}\descript{| Bachelors of Technology Computer Science Engineering}\hfill \location{Alappuzha, Kerela | July 2017 - May 2022}\\
+    GPA: 7.8\\
+    \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Experience
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \section{Experience}
+      \runsubsection{Two waits}\descript{| TA and Python Instructor}\hfill \location{Delhi | May 2021 – July 2021}
+          \begin{tightemize}
+  \item Instructed 150+ students of multiple batches to reinforce learning concepts.
+\end{tightemize}
+          \sectionsep
+      \runsubsection{Girl Script Summer of Code}\descript{| Mentor – CoinShift Imaging Box}\hfill \location{March 2021 – June 2021}
+          \begin{tightemize}
+  \item Helped the participants to how to make their first contribution to the project.
+  \item Gave them insights on how to create a Pull request and open up an issue and clarified their doubts.
+\end{tightemize}
+          \sectionsep
+      \runsubsection{Code for Cause}\descript{| Campus Leader}\hfill \location{Feb 2021 – May 2021}
+          \begin{tightemize}
+  \item Mentored students \& Conducted various workshops.
+  \item Undertook Programming Bootcamps and workshops in C and C++ as a campus leader.
+  \item Gave talks on open source, guided and motivated students to help them proceed in the world of open source.
+\end{tightemize}
+          \sectionsep
+      \runsubsection{DevScript Winter of Code}\descript{| Project Maintainer - SoDV Detector}\hfill \location{Jan 2021 – Feb 2021}
+          \begin{tightemize}
+  \item Mentored participants and guided them on making opensource contributions.
+\end{tightemize}
+          \sectionsep
+      \runsubsection{The Sparks Foundation}\descript{| Data Science \& Business Analytics Intern}\hfill \location{Nov 2020 – Dec 2020}
+          \begin{tightemize}
+  \item Solved the Various tasks related to Data science.
+  \item The Exploratory data analysis was carried out and ML models were made on various datasets using various open source libraries.
+\end{tightemize}
+          \sectionsep
+      \runsubsection{MedTourEasy}\descript{| Data Engineering Trainee}\hfill \location{Oct 2020 – Nov 2020}
+          \begin{tightemize}
+  \item Completed Data Engineering with Google Cloud Specialization.
+  \item Implemented the learnings in the practical labs taken over Qwiklabs.
+\end{tightemize}
+          \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{ l l }
+\descript{Programming Languages} & {\location{Java, Python, Go, C++, JavaScript, TypeScript}} \\
+\descript{Libraries/Frameworks} & {\location{Node, React, Three.js, P5.js, Tensorflow, Flask, Streamlit, Pycaret, JobLib}} \\
+\descript{Tools / Platforms} & {\location{Docker, Kubernetes, CI/CD, Google Cloud Platform, Microsoft Azure, Heroku}} \\
+\descript{Databases} & {\location{SQL, MongoDB, CockroachDB, Cloud Databases}} \\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Projects
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \section{Projects / Open-Source}
+      \raggedright
+      
+          \runsubsection{\large{NEST}}
+          \descript{| Python, Streamlit, JSON}\hfill \location{https://github.com/rajpratyush/NEST}\\
+          A web app for predicting prices of houses using Visual and Textual Features using an optimized Deep
+Learning method.\\
+          \sectionsep
+        
+      
+          \runsubsection{\large{Neuror}}
+          \descript{| Android(Java)}\hfill \location{https://github.com/rajpratyush/Neuror}\\
+          - An android app connecting people suffering from autism with their prospective employers considering their
+special needs.\\
+          \sectionsep
+        
+      
+          \runsubsection{\large{SpaceX}}
+          \descript{| MongoDB, React, Express, Node.js, Heroku}\hfill \location{https://github.com/rajpratyush/SpaceX}\\
+          A MERN Stack based web app to browse all the space programs launched by SpaceX with their Successful
+landing, Successful launch and Year of launch\\
+          \sectionsep
+        
+      
+          \runsubsection{\large{SoDV Detector}}
+          \descript{| Python}\hfill \location{https://github.com/rajpratyush/Social-Distancing-Detector}\\
+          An Application to detect social distancing which can be used to detect people in video streams using
+the YOLO object detection.\\
+          \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors \& Awards}
+\begin{tightemize}
+\item 2020 EMEA - Code For Good Hackathon Winner organized by:- J. P. Morgan Chase (\\
+\item Best use of Google Cloud in Neighbourhood Hacks\\
+\item Runner up in Twilio Quest Challenge in Hack Cade\\
+\item Domain.com Challenge Winner in Pride Hacks.\\
+\item Open Source Contributor. (Microsoft-Graspologic, Matplotlib, PyCaret, Streamlit, GeoPandas, Scikit-Image, dask, Google-Python- Fire, TimeSketch)\\
+\item Technical Mentor at Hack UTD: The VII Seas, SF Hacks 2021, HACKaBULL, Uncommon Hacks, Hack-TJ 8.0, Oceania Hacks, Bit camp 2021, Citrus Hacks, Venus Hacks, Hydrangea Hacks, GSB hacks.\\
+\item Mentor @MLH\\
+\item KVPY Scholar.\\
+\end{tightemize}
+    \ 
+    \end{document}
